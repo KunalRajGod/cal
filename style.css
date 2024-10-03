@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1C1C1E;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .calculator {
+    width: 340px;
+    height: 600px;
+    background-color: #333333;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .display {
+    height: 120px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 36px;
+    overflow: hidden; /* Ensure text does not overflow */
+  }
+  
+  #expression {
+    font-size: 20px;
+    opacity: 0.7;
+    text-align: right;
+    margin: 0;
+    line-height: 0.9; /* Maintain consistent spacing */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensure long text doesn't overflow */
+  }
+  
+  #result {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Prevent overflow */
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    background-color: #505050;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    width: 75px; /* Set button size */
+    height: 75px;
+  }
+  
+  .btn:active {
+    background-color: #6C6C6C;
+  }
+  
+  .btn.operator {
+    background-color: #FF9500;
+    color: white;
+  }
+  
+  .btn.operator:active {
+    background-color: #FFB300;
+  }
+  
+  .btn.clear {
+    background-color: #D4D4D2;
+    color: black;
+  }
+  
+  .btn.clear:active {
+    background-color: #E5E5E2;
+  }
+  
+  .btn.zero {
+    width: calc(75px * 2 + 10px); /* Make '0' button span two columns */
+    border-radius: 30px;
+  }
+  
+  .btn.delete {
+    background-color: #FF3B30;
+  }
+  
+  .btn.delete:active {
+    background-color: #FF6347;
+  }
+  
