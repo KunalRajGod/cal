@@ -90,6 +90,10 @@ body {
     background-color: #FFB300;
   }
   
+  .btn:hover{
+    background-color: #6C6C6C;
+  }
+
   .btn.clear {
     background-color: #D4D4D2;
     color: black;
